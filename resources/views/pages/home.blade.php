@@ -1,5 +1,10 @@
 @extends('layouts.main_layout')
 
 @section('content')
-    <h1>Hello world</h1>
+    <h1>Movies</h1>
+    <ul>
+        @foreach ($movies as $movie)
+            <li>{{$movie -> title}}</li>
+        @endforeach
+    </ul>
 @endsection
